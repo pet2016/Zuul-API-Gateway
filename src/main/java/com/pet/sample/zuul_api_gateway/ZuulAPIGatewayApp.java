@@ -1,7 +1,7 @@
 package com.pet.sample.zuul_api_gateway;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
@@ -10,7 +10,7 @@ import com.pet.sample.zuul_api_gateway.filter.PostFilter;
 import com.pet.sample.zuul_api_gateway.filter.PreFilter;
 import com.pet.sample.zuul_api_gateway.filter.RouteFilter;
 
-@SpringBootApplication
+@SpringCloudApplication
 @EnableZuulProxy
 public class ZuulAPIGatewayApp {
   
